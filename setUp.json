@@ -1,0 +1,8 @@
+{
+    "browser1":"chrome", 
+    "browser":"firefox", 
+    "url":"http://quantro.enqa-remax.com/",
+    
+  
+    "environment":"local"
+}

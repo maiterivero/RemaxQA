@@ -1,0 +1,73 @@
+{
+    "btnLogo":{"selectorType":"css","selector":"#site-head > div > figure > a"},
+    "btnMyRemax":{"selectorType":"css","selector":"#js-user-acctmenu > div > a"},
+    "btnCreateAccount":{"selectorType":"css","selector":"#js-modal-body > div > div > h3 > a"},
+    "btnForgotPassword":{"selectorType":"css","selector":"#js-modal-body > div > fieldset > ol > li.fielditem.rememberme > a"},
+    "btnSignIn":{"selectorType":"css","selector":"#js-modal-body > div > fieldset > div.form-submit.login-form-fields-submit > button"},
+    "btnPrivacy":{"selectorType":"css","selector":"#js-modal-body > div > fieldset > small > a"},
+    "messageInvalidSearch":{"selectorType":"css","selector":"#js-modal-invalid-search"},
+    "messageInputMail":{"selectorType":"css","selector":"#js-modal-body > div > fieldset > ol > li.fielditem.email > span> span"},
+    "messageInputPassword":{"selectorType":"css","selector":"#js-modal-body > div > fieldset > ol > li.fielditem.password > span > span"},
+    
+   
+  
+    "btnLetsGo":{"selectorType":"id","selector":"fs_submit"},
+    "searchType":{"selectorType":"className","selector":"landing-link"},
+    "linkForSale":{"selectorType":"css","selector":"li.landing-tab:nth-child(1) > a:nth-child(1)"},
+    "inputForSale":{"selectorType":"id","selector":"js-hpsearch-search"},
+    "linkHomeEstimates":{"selectorType":"css","selector":"li.landing-tab:nth-child(2) > a:nth-child(1)"},
+    "inputHomeEstimates":{"selectorType":"id","selector":"js-location"},
+    "linkAgents":{"selectorType":"css","selector":"li.landing-tab:nth-child(3) > a:nth-child(1)"},
+    "inputAgents":{"selectorType":"id","selector":"js-txtagentlocation"},
+    "linkOffices":{"selectorType":"css","selector":"li.landing-tab:nth-child(4) > a:nth-child(1)"},
+    "inputOffices":{"selectorType":"id","selector":"js-txtofficelocation"},
+
+    "autocompleteItem":{"selectorType":"css","selector":"#js-autocomplete-js-hpsearch-search > table > tbody > tr:nth-child(1) > td > a"},
+                                                       
+    
+    "titleByCity":{"selectorType":"css","selector":"#js-homesforsale-city > div.fn-top-cities > h2"},
+    "linkByCity":{"selectorType":"css","selector":"#js-homesforsale-city > div.fn-top-cities > ol > li:nth-child(1) > a"},
+
+"__commentcheckLink": "element for test checkLink", 
+                                                    
+    "linkByCities":{"selectorType":"css","selector":"#js-homesforsale-city > div.fn-top-cities > ol > li > a"},
+    "linkByState":{"selectorType":"css","selector":"#js-homesforsale-state > div.fn-top-states > ol > li > a"},
+    "linkByZipCode":{"selectorType":"css","selector":" #js-homesforsale-zip > div.fn-top-zips > ol > li > a"},
+    "linkByCounty":{"selectorType":"css","selector":"#js-homesforsale-county > div.fn-top-counties > ol > li > a"},
+                                                        
+"__commentcheckMoreLink": "element for test checkMoreLink",    
+    "btnMoreCities":{"selectorType":"css","selector":".fn-more-cities > a:nth-child(1) > span:nth-child(1) > span:nth-child(1)"},
+    "linkMoreCities":{"selectorType":"css","selector":"#js-homesforsale-city > div.dropdown.fn-more-cities.open > div > ol > li > a"},
+
+    "btnAllStates":{"selectorType":"css","selector":".fn-more-states > a:nth-child(1) > span:nth-child(1) > span:nth-child(1)"},
+    "linkAllStates":{"selectorType":"css","selector":"#js-homesforsale-state > div.dropdown.fn-more-states.open > div > ol > li > a"},
+
+    "btnTopZipCodes":{"selectorType":"css","selector":".fn-more-zips > a:nth-child(1) > span:nth-child(1) > span:nth-child(1)"},
+    "linkTopZipCodes":{"selectorType":"css","selector":"#js-homesforsale-zip > div.dropdown.fn-more-zips.open > div > ol > li > a"},
+
+    "btnTopCounties":{"selectorType":"css","selector":".fn-more-counties > a:nth-child(1) > span:nth-child(1) > span:nth-child(1)"},
+    "linkTopCounties":{"selectorType":"css","selector":"#js-homesforsale-county > div.dropdown.fn-more-counties.open > div > ol > li > a"},
+
+"__commentcheckElementByCity": "element for test checkElementByCity",    
+    "resultsBreadcrumb":{"selectorType":"id","selector":"results-detail-breadcrumb"},
+    "totalProperties":{"selectorType":"css","selector":" #js-results-order > div > div.results-sourcename.sort-text"},
+    "itemPerPages":{"selectorType":"css","selector":"#js-results-order > div > div.property-listing-options > p > a.js-items-per-pages.title-55.pages-option.showpghighlight"},
+                                                  
+    "btnpages":{"selectorType":"css","selector":"li.pages-item > a:nth-child(1)"},
+    "itemInLastPage":{"selectorType":"css","selector":"li.results-item--listing"},
+
+    "titleInSearch":{"selectorType":"css","selector":"#H2"},
+    
+"__commentSocialMediaElements": "element for test social media",      
+    "btnSocialMedia":{"selectorType":"css","selector":"#media-footer-links > div > ul > li > a"}
+   
+
+   
+   
+    
+                                                    
+   
+  
+  
+}
+
