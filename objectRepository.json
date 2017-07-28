@@ -8,8 +8,33 @@
     "messageInvalidSearch":{"selectorType":"css","selector":"#js-modal-invalid-search"},
     "messageInputMail":{"selectorType":"css","selector":"#js-modal-body > div > fieldset > ol > li.fielditem.email > span> span"},
     "messageInputPassword":{"selectorType":"css","selector":"#js-modal-body > div > fieldset > ol > li.fielditem.password > span > span"},
+    "inputMail":{"selectorType":"css","selector":"#field-email"},
+    "inputPassword":{"selectorType":"css","selector":"#field-password"},
+    "userMenu":{"selectorType":"css","selector":"#js-user-acctmenu"},
+    "messageErrorLogin":{"selectorType":"css","selector":"#js-errormessage-login"},
+    "btnSendMePassword":{"selectorType":"css","selector":"#js-modal-body > fieldset > div.form-submit > button"},
+    "privacyPolicy":{"selectorType":"css","selector":"#page > div > h3"},
+    "btnCreateFreeAccount":{"selectorType":"css","selector":"#js-modal-body > div > fieldset > div.form-submit.register-form-fields-submit > button"},
     
-   
+    "propertyBlocks":{"selectorType":"css","selector":"#js-propertyblocks"},
+    "propertyBlocksTitles":{"selectorType":"css","selector":"#js-propertyblocks-inner > div.propertyblock-titles > div > div > article > header>a>h3"},
+                                                        
+    
+    "portalBlocksTitles":{"selectorType":"css","selector":"#page > div.verticals > section > div > h3"},
+    "btnSearchGlobal":{"selectorType":"css","selector":"#page > div.verticals > section.verticals-section.verticals-section--abroad > div > a"},
+    "btnSearchCommercial":{"selectorType":"css","selector":"#page > div.verticals > section.verticals-section.verticals-section--commercial > div > a"}, 
+    "btnSearchLuxury":{"selectorType":"css","selector":"#page > div.verticals > section.verticals-section.verticals-section--luxury > div > a"},   
+
+    "btnGetApp":{"selectorType":"css","selector":"#page > div.remaxinteractions > div.remaxinteractions-section.remaxapp > div.remaxapp-button > a"}, 
+    "btnAppStore":{"selectorType":"css","selector":"#page > div > div > div.remax-mobileapp-tertiary > span.remax-mobileapp-btnios > a"}, 
+    "btnGooglePlay":{"selectorType":"css","selector":"#page > div > div > div.remax-mobileapp-tertiary > span.remax-mobileapp-btnandr > a"}, 
+    "btnBlogExploreMoreArticles":{"selectorType":"css","selector":"#page > div.remaxinteractions > div.remaxinteractions-section.remaxblog > div.remaxblog-button > a"}, 
+    "btnBlogArticles":{"selectorType":"css","selector":"#js-rssblog > ul > li:nth-child(1) > p.remaxblog-content-slider-list-readmore > a"}, 
+    "titleBlogArticles":{"selectorType":"css","selector":"#js-rssblog > ul > li:nth-child(1) > p.remaxblog-content-slider-list-blogtitle"}, 
+                                                            
+    "headArticle":{"selectorType":"css","selector":"#col-center > div.widget__body.sm-mt-1 > div > h1"},
+    
+    
   
     "btnLetsGo":{"selectorType":"id","selector":"fs_submit"},
     "searchType":{"selectorType":"className","selector":"landing-link"},
@@ -70,4 +95,5 @@
   
   
 }
+
 
