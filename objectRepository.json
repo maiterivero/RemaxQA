@@ -21,6 +21,10 @@
                                                         
     
     "portalBlocksTitles":{"selectorType":"css","selector":"#page > div.verticals > section > div > h3"},
+
+    
+    "btnAgentsSearch":{"selectorType":"css","selector":"#page > section > div > div > footer > a"},
+
     "btnSearchGlobal":{"selectorType":"css","selector":"#page > div.verticals > section.verticals-section.verticals-section--abroad > div > a"},
     "btnSearchCommercial":{"selectorType":"css","selector":"#page > div.verticals > section.verticals-section.verticals-section--commercial > div > a"}, 
     "btnSearchLuxury":{"selectorType":"css","selector":"#page > div.verticals > section.verticals-section.verticals-section--luxury > div > a"},   
@@ -33,7 +37,14 @@
     "titleBlogArticles":{"selectorType":"css","selector":"#js-rssblog > ul > li:nth-child(1) > p.remaxblog-content-slider-list-blogtitle"}, 
                                                             
     "headArticle":{"selectorType":"css","selector":"#col-center > div.widget__body.sm-mt-1 > div > h1"},
+    "linksWorldContentFooter":{"selectorType":"css","selector":"#remax-footer-links > div > div.footerset-one > div.grid-row.grid-padding.site-world > ul > li > a"},
+    "linksRemaxContentFooter":{"selectorType":"css","selector":"#remax-footer-links > div > div.footerset-one > div.grid-row.grid-padding.site-corporate > ul > li > a"},
+    "linksBusinessContentFooter":{"selectorType":"css","selector":"#remax-footer-links > div > div.footerset-two > div.grid-row.grid-padding.site-business > ul > li > a"},
+    "linksInvestorContentFooter":{"selectorType":"css","selector":"#remax-footer-links > div > div.footerset-two > div.grid-row.grid-padding.site-investor > ul > li > a"},
+    "linksOthersContentFooter":{"selectorType":"css","selector":"#remax-footer-links > div > div.footerset-three > div.grid-row.grid-padding.site-others > ul > li > a"},
+    "linksSupportsContentFooter":{"selectorType":"css","selector":"#remax-footer-links > div > div.footerset-three > div.grid-row.grid-padding.site-supports > section > a"},
     
+    "linksFooter":{"selectorType":"css","selector":"#global-sitemap-footer > ul > li > a"},
     
   
     "btnLetsGo":{"selectorType":"id","selector":"fs_submit"},
@@ -95,5 +106,4 @@
   
   
 }
-
 
