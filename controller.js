@@ -355,4 +355,47 @@ module.exports = {
             },8000)   
         })
     },
+	/**purl is the new URL when clicking in link plink
+     * plink is an id to find an element or an element list
+     * ptext is the link text
+     * pnewWindows is true when link opens a new window
+     * ppos is element position in element list
+    */
+    checkLinks:function(purl, plink, ptext, pnewWindows, ppos)
+    {
+        return new Promise(function (resolve) 
+        { 
+            module.exports.findElements(plink).then(function(elements)
+            {   
+                module.exports.scrollToElement(elements[ppos]);                   
+                elements[ppos].getText().then(function(text){
+                    if(text!=='')
+                    {
+                        module.exports.setSteps(text + ' is equal  ' + text + ' ?')
+                        expect(text.toLowerCase()).toBe(ptext.toLowerCase());
+                        module.exports.setSteps('click in element : ' + text );
+                    }
+                    else
+                    {
+                        module.exports.setSteps('click in element : ' + ptext );    
+                    }
+                   
+                })              
+                elements[ppos].click().then(function(){
+                    setTimeout(function()
+                    {
+                        if(pnewWindows==='true')
+                        module.exports.changePage();
+                        module.exports.getCurrentUrl().then(function(url)
+                        {
+                            module.exports.setSteps(url + ' content : ' + purl +' ?');
+                            var result=utilities.textContentText(url,purl);
+                            expect(result).toBe(true); 
+                            resolve(); 
+                        });                            
+                    },4000)
+                }) 
+            })
+        });
+    },
 }
