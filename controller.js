@@ -334,15 +334,7 @@ module.exports = {
         {
            
             var aux=handles[1]
-            driver.switchTo().window(aux);//.then(function ()                
-           // {
-                // driver.manage().timeouts().pageLoadTimeout(7000)}).then(function () 
-                // {
-                    // driver.getTitle().then(function (title) 
-                    // {
-                    //     console.log('Title now: ' + title);  
-                    // })
-           // })
+            driver.switchTo().window(aux);
         }) 
     },
    
