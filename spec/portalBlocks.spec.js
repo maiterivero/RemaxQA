@@ -46,29 +46,9 @@ describe('Test Portal Blocks', function()
     {
         it('Url content '+ data.url, function(done) 
         { 
-            controller.findElement(data.btn).then(function(element)
-            {
-                controller.scrollToElement(element);                                       
-                element.getText().then(function(text)
-                {
-                    controller.setSteps('click element '+ text)
-                })              
-                element.click().then(function()
-                {
-                    controller.changePage();
-                    setTimeout(function()
-                    {
-                        controller.getCurrentUrl().then(function(url)
-                        {
-                            controller.setSteps(url + ' content : ' + data.url +' ?');
-                            var result=utilities.textContentText(url,data.url);
-                            expect(result).toBe(true);                           
-                            done(); 
-                        });                            
-                    },4000)
-                    
-                })
-            })             
+            controller.checkLinks(data.url, data.link, data.text, data.newWindows, data.pos).then(function(){
+                done();
+            });            
         });
     });
 });

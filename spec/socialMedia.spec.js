@@ -24,7 +24,7 @@ describe('Test social media', function()
     var i=0;
     using(testData.classesLink, function (classes) 
     {
-        it('RE/MAX Social media includes links to several Social Media Networks like ' + classes, function (done) 
+        xit('RE/MAX Social media includes links to several Social Media Networks like ' + classes, function (done) 
         {              
             controller.findElements('btnSocialMedia')            
             .then(function(elements)
@@ -43,36 +43,15 @@ describe('Test social media', function()
             });           
         })
     })
-    var p=0;
-    using(testData.titleList, function (title) 
+   
+    using(testData.socialMediaLinks, function (data) 
     { 
-        it('check page title is '+ title, function (done) 
-        {             
-            var message1='';            
-            controller.findElements('btnSocialMedia')            
-            .then(function(elements)
-            {                   
-                element=elements[p];  
-                controller.scrollToElement(element);
-                element.getAttribute('class').then(function (att) 
-                {
-                    controller.setSteps('click btn ' + att);        
-                });
-                
-                element.click();  
-                setTimeout(function() 
-                {
-                    controller.changePage();
-                    controller.getTitle().then(function (titlePage) 
-                    {  
-                        controller.setSteps('Title page is ' + titlePage);                              
-                        expect(title).toEqual(titlePage)
-                        done();  
-                        p++;
-                    }) 
-                }, 5000);                          
-            });  
-        })
+        it('Url content '+ data.url, function(done) 
+        { 
+            controller.checkLinks(data.url, data.link, data.text, data.newWindows, data.pos).then(function(){
+                done();
+            });            
+        });       
     })
 });
 

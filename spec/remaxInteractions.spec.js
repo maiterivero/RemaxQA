@@ -35,50 +35,31 @@ describe('Test remax interactions', function()
             {   
                 setTimeout(function()
                 {
-                    controller.changePage();                    
-                    controller.getCurrentUrl().then(function(url)
+                    controller.changePage(); 
+                    controller.elementIsDisplayed('btnAppStore').then(function(result)
                     {
-                        controller.setSteps('Url '+url+' is equal http://www.remax.com/general/mobile-apps/?');
-                        expect(url).toBe('http://www.remax.com/general/mobile-apps/'); 
-                        controller.elementIsDisplayed('btnAppStore').then(function(result)
+                        controller.setSteps('Element btnAppStore is present? '+ result);
+                        expect(result).toBe(true);
+                        controller.elementIsDisplayed('btnGooglePlay').then(function(result)
                         {
-                            controller.setSteps('Element btnAppStore is present? '+ result);
+                            controller.setSteps('Element btnGooglePlay is present? '+ result);
                             expect(result).toBe(true);
-                            controller.elementIsDisplayed('btnGooglePlay').then(function(result)
-                            {
-                                controller.setSteps('Element btnGooglePlay is present? '+ result);
-                                expect(result).toBe(true);
-                                done();  
-                            });  
-                        });                        
-                    })  
+                            done();  
+                        });  
+                    });                        
+                   
                 },4000);  
             });  
         })             
     });
-    it('Check btn Explore more articles ', function(done)
+    using(testData.interactionLinks, function (data) 
     {
-        controller.findElement('btnBlogExploreMoreArticles').then(function(element)
-        {
-            controller.scrollToElement(element);   
-            element.getText().then(function(text)
-            {
-                controller.setSteps('click element '+ text);
-            })   
-            element.click().then(function()
-            {   
-                setTimeout(function()
-                {
-                    controller.changePage();                   
-                    controller.getCurrentUrl().then(function(url)
-                    {
-                        controller.setSteps('Url '+url+' is equal http://blog.remax.com/');
-                        expect(url).toBe('http://blog.remax.com/'); 
-                        done();                                           
-                    })  
-                },4000);  
-            });  
-        })             
-    });
+        it('Check link '+ data.text, function(done) 
+        { 
+            controller.checkLinks(data.url, data.link, data.text, data.newWindows, data.pos).then(function(){
+                done();
+            });            
+        });
+    });  
     
 });

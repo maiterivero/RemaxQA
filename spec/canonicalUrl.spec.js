@@ -1,11 +1,8 @@
 var utilities = require('../utilities');
 var controller = require('../controller');
-var setUpTest = require('../setUpTest');
 var using = require('jasmine-data-provider');
 var testData = require('./TestData.js');
-var pageObject = utilities.readJson('objectRepository.json');
 var setUp = utilities.readJson('setUp.json');
-var fs = require('fs');
 
 
 var href;
@@ -31,8 +28,6 @@ describe('Checks canonical urls', function()
     {
         it('for ' + cities, function (done) 
         {
-            setTimeout(function() {         
-            
             controller.findElement('inputForSale')
                 .then(function (element)
                 {
@@ -72,7 +67,6 @@ describe('Checks canonical urls', function()
                         )                            
                     )            
                 })
-        }, 8000);
         })
     })
 })

@@ -34,36 +34,15 @@ describe('Test property blocks', function()
                 done(); 
             });           
         })             
-    });
-    var i=0;
+    });    
     using(testData.propertyBlocksLink, function (data) 
     {
-        it('Url content '+ data, function(done) 
+        it('Url content '+ data.url, function(done) 
         { 
-            controller.findElement('propertyBlocks').then(function(element)
-            {
-                controller.scrollToElement(element); 
-                controller.findElements('propertyBlocksTitles').then(function(elements)
-                {                      
-                    elements[i].getText().then(function(text){
-                        controller.setSteps('click element '+ text)
-                    })              
-                    elements[i].click().then(function(){
-                        setTimeout(function()
-                        {
-                            controller.getCurrentUrl().then(function(url)
-                            {
-                                controller.setSteps(url + ' content : ' + data +' ?');
-                                var result=utilities.textContentText(url,data);
-                                expect(result).toBe(true);
-                                i++;
-                                done(); 
-                            });                            
-                        },4000)
-                    }) 
-                })
-            })             
+            controller.checkLinks(data.url, data.link, data.text, data.newWindows, data.pos).then(function(){
+                done();
+            });            
         });
-    });
+    });  
   
 });
